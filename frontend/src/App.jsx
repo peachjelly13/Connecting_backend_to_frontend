@@ -4,30 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [jokes, setJokes] = useState([])
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <h1>This is my frontend of the backend code</h1>
+    <p>JOKES: {jokes.length}</p>
+
+    {  //we will make the joke id as a unique value
+      //here we are studying an api and seeing it returns id,title and content and accordingly
+      //we are creating our values
+      jokes.map((joke,index)=>{
+        <div key={joke.id}>  
+          <h3>{joke.title}</h3>
+          <p>{joke.content}</p>
+          
+        </div>
+
+      })
+    }
+     
+        
     </>
   )
 }
