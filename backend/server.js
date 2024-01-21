@@ -2,13 +2,13 @@ import express from 'express';
 
 const app = express();
 //app.get('/',(req,res)=>{
-    res.send('Server is ready')
+    //res.send('Server is ready')
 //})
 
 const port = process.env.PORT || 3000;
 
 //get a list of 5 jokes
-app.get('/jokes',(req,res)=>{
+app.get('/api/jokes',(req,res)=>{
     const jokes = [
         {
             id:1,
