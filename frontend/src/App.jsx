@@ -27,14 +27,14 @@ function App() {
     {  //we will make the joke id as a unique value
       //here we are studying an api and seeing it returns id,title and content and accordingly
       //we are creating our values
-      jokes.map((joke,index)=>{
+      jokes.map((joke,index)=>(
         <div key={joke.id}>  
           <h3>{joke.title}</h3>
           <p>{joke.content}</p>
           
         </div>
 
-      })
+      ))
     }
      
         
