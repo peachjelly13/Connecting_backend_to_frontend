@@ -1,2 +1,3 @@
-Code To  Connect Backend To Frontend 
-Steps To Connect Backend To Frontend:
+- Code To  Connect Backend To Frontend 
+- Steps To Connect Backend To Frontend
+- This is a very simple procedure to connect backend to frontend using axios
